@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+.body-title-text{
+	margin-bottom: 10px;
+	font-size: 16px;
+    font-weight: bold;
+    color: #0096d6;
+    text-align: center;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+}
+

@@ -1,0 +1,445 @@
+html {
+	color: #000;
+}
+ 
+/* _________________________GLOBAL_______________________ */
+.ui-state-default {
+    color: #000;
+}
+ 
+.ui-corner-right {
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.ui-corner-left {
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.ui-widget-overlay {
+	background: #000;
+	opacity: .70;
+}
+
+.ui-shadow {
+    box-shadow: 0 0px 0px rgba(0,0,0,0.0);
+}
+
+.ui-widget-content {
+	background: rgba(0, 0, 0, 0.0);
+}
+
+/* TOAST */
+#toast-container {
+	position: relative;
+	width: 100%;
+}
+ 
+div.toast.success-button-toast {
+	position: fixed;
+	width: 300px;
+	top: 50%;
+	left: 50%;
+	margin: 0 auto;
+	background: #0096d6;
+	font-size: 12px;
+	box-shadow: none;
+	float: left;
+	transform: translate(-50%, -50%) !important;
+}
+
+/* RADIO BUTTON */
+
+.time [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after
+	{
+	border: 2px solid #0096d6;
+	background: #0096d6;
+}
+
+.time [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before,
+	[type="radio"].with-gap:checked+label:after {
+	border: 2px solid #0096d6;
+}
+
+.time [type="radio"]+label {
+	font-size: 12px;
+	color: #000;
+}
+
+.time [type="radio"]:checked+label {
+	color: #0096d6;
+}
+
+.time [type="radio"]+label::before {
+	-moz-transition: .28s ease;
+}
+
+/* TEXTAREA */
+textarea.materialize-textarea {
+	font-size: 12px;
+	padding: 6px 0 16px 0;
+}
+
+textarea.materialize-textarea:focus:not([readonly])+label {
+	color: #0096d6;
+}
+
+textarea.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid #0096d6;
+	box-shadow: 0 1px 0 0 #0096d6;
+}
+
+/* INPUT TEXT */
+input[type=text] {
+	height: 25px;
+}
+/* INPUT NUMBER FOR TOTALDAY OF LEAVE */
+.labelForTotalLeaveDay {
+	top: -15px !important;
+	z-index: -1;
+}
+.text_color_label {
+	color:#0096d6 !important;
+}
+/* CHECKBOX */
+[type="checkbox"]+label {
+    font-size: 12px;
+    color: #000;
+}
+
+[type="checkbox"].filled-in+label:before,
+[type="checkbox"].filled-in+label:after {
+    transition: none;
+}
+
+[type="checkbox"].filled-in.tabbed:checked:focus+label:after {
+	border: 2px solid #0096d6;
+    background-color: #0096d6;
+}
+
+[type="checkbox"].filled-in:not(:checked)+label:after {
+    top: 4px;
+    height: 16px;
+    width: 16px;
+}
+
+[type="checkbox"].filled-in:checked+label:after {
+    top: 4px;
+    height: 16px;
+    width: 16px;
+    border: 2px solid #0096d6;
+    background-color: #0096d6;
+}
+
+[type="checkbox"].filled-in:checked+label:before {
+    top: 3px;
+    left: 0.3px;
+    width: 7px;
+    height: 11px;
+}
+
+/* _________________________ALL_______________________ */
+.leave-request-form {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.leave-request-row {
+	margin: 0 auto;
+	font-size: 12px;
+	width: 30%;
+}
+
+.type-of-leave-label {
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+
+.remain-day {
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.col.s12.leave-request-font {
+	margin-top: 10px;
+}
+
+.leave-type-container {
+	margin-bottom: 20px;
+}
+
+.leave-type-container .leave-request-font {
+	margin-bottom: 5px;
+	color: #9e9e9e;
+}
+
+.leave-type-container .leave-request-type {
+    padding: 0;
+}
+
+.leave-request-type.ui-buttonset {
+	margin: 0;
+}
+
+/* LEAVE REQUEST TYPE STYLE */
+.leave-request-type div {
+	width: 100%;
+	background: #e8eaed;
+	border-color: #e8eaed;
+	margin-bottom: 5px;
+	padding: 3px 0;
+	box-shadow: none;
+	text-align: left;
+}
+
+.leave-request-type div:last-child {
+	margin-bottom: 0;
+}
+
+.leave-request-type div:focus {
+	outline: 0;
+}
+
+.leave-request-type div.ui-state-active {
+	background: #0096d6;
+	color: #fff;
+	font-size: 12px;
+	border-color: #0096d6;
+}
+
+.row.leave-from .input-field label {
+	top: 20px;
+	bottom: 0;
+	left: 0;
+}
+
+.time .row {
+	margin: 0;
+}
+
+.time .input-field {
+	margin-top: 0;
+}
+
+.time .row .input-field label {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.total-row {
+	margin-top: -10px;
+}
+
+.row.leave-from,
+.row.total-row {
+    position: relative;	
+}
+
+.row.total-row .input-field label {
+	font-size: 10px;
+	left: 0;
+}
+
+.messages-info {
+	color: #0096d6;
+}
+
+.message.col.s12 {
+	margin: -3.5px 0;
+}
+
+.message label {
+	font-size: 12px;
+}
+
+.messages-warning {
+	color: red;
+	font-size: 12px;
+	white-space: pre-wrap;
+}
+
+.leave-request-message .messages-warning {
+	color: orange;
+}
+
+.leave-request-message .message-error, 
+.checkbox-confirm-container .message-error {
+	color: red;
+	font-size: 12px;
+}
+
+.row.leave-from .messages-warning,
+.row.total-row .messages-warning {
+	position: absolute;
+	left: 0;
+	top: 40px;
+}
+
+.row.leave-request-message {
+	margin: -3.5px 0;
+}
+
+.leave-request-form .row.note-row {
+	margin-bottom: 0;
+}
+
+.row.note-row {
+	margin-top: 10px;
+}
+
+.row.note-row .input-field {
+	margin-top: 10px;
+}
+
+.row.note-row .input-field label {
+	font-size: 12px;
+}
+
+.row.note-row .input-field label.active {
+	font-size: 10px;
+}
+
+.note-row .input-field label {
+	left: 0px;
+}
+
+.leave-request-form .row.checkbox-confirm-container {
+	margin-bottom: 20px;
+}
+
+a.leave-request-button {
+	padding: 7.5px 0;
+	width: 100%;
+	color: #fff;
+	background: #0096d6;
+	display: block;
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
+
+a.leave-request-button:active {
+	background: #6f6f6f;
+}
+
+/* _________________________320PX _______________________ */
+@media screen and (min-width: 320px) {
+    .content {
+        padding: 0 10px;
+    }
+}
+
+/* _________________________385PX _______________________ */
+@media screen and (min-width: 385px) {
+    .leave-request-form {
+        width: 350px;
+    }
+}
+
+/* _________________________600PX _______________________ */
+@media screen and (min-width: 600px) {
+	.content {
+	   padding: 0;
+	}
+	
+    .leave-request-form {
+        width: 95%;
+    }
+    
+    .leave-request-form .row {
+        margin-bottom: 10px;
+    }
+    
+    .leave-request-type {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .leave-request-type div {
+        width: 49%;
+    }
+    
+    .leave-request-type div.ui-button:nth-child(odd) {
+        margin-right: 2%;
+    }
+    
+    .leave-request-type div:nth-last-child(2) {
+        margin-bottom: 0;
+    }
+    
+    .time.col.s8 {
+        width: 50%;
+        float: right;
+    }
+    
+    .time .align-center.col.s6 {
+        text-align: left;
+    }
+    
+    .col.s12.total-leave-day {
+        width: 33.3333333333%;
+    }
+    
+    .col.s12.message {
+        width: 49%;
+        float: right;
+        margin-top: 3.5px;
+    }
+
+    .row.leave-request-message {
+        margin-top: -15px;
+        margin-bottom: 16px;
+        float: left;
+    }
+        
+    a.leave-request-button {
+        width: 120px;
+    }
+}
+
+/* _________________________747PX _______________________ */
+@media screen and (min-width: 747px) {
+	.leave-request-form {
+	   width: 723px;
+	}
+	
+    .leave-request-type div:hover, .leave-request-type div:focus  {
+    	border-color: #0096d6;
+    }
+    
+    .leave-request-type div.ui-state-disabled:hover, .leave-request-type div.ui-state-disabled:focus  {
+    	border-color: #e8eaed;
+    }
+    
+	.col.s12.message {
+        margin-top: 23.5px;
+    }
+    
+    a.leave-request-button:hover {
+    	background: #6f6f6f;
+    	transition: all 0.4s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 747px) and (-ms-high-contrast: active) , ( -ms-high-contrast :
+	none) {
+    .leave-request-form {
+       width: 728px;
+    }	
+}
+
+@media screen and (-ms-high-contrast: active) , ( -ms-high-contrast :
+	none) {
+	 
+	div.toast.success-button-toast {
+		width: 305px;
+		line-height: 28px;
+	}
+	
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+	color: #ccc;
+}
+
+

@@ -1,0 +1,156 @@
+/* ------------------------------------ GLOBAL ------------------------------------*/
+/* modify for sticky footer */
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin: 0 0 51px;
+}
+
+/* Roboto font */
+.ui-widget, .ui-widget .ui-widget {
+	font-family: "Roboto", sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* ------------------------------------ TITLE ------------------------------------*/
+.title {
+	color: #0096d6;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* ------------------------------------ INPUT & LABEL ------------------------------------*/
+/* remove text shadow of input */
+.ui-state-default {
+	text-shadow: none;
+}
+
+/* remove box shadow when click out input text */
+.input-field .ui-state-default {
+	box-shadow: none;
+}
+
+/* label color */
+.input-field label {
+	color: #ccc;
+	font-size: 12px;
+}
+
+.input-field label:not(.label-icon).active {
+	font-size: 10px;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus+label, .input-field input[type=password]:focus+label
+	{
+	color: #0096d6;
+}
+
+/* input underline color */
+.input-field input {
+	border-bottom: 1px solid #ccc;
+	font-size: 12px;
+}
+
+/* input underline focus color */
+.input-field input[type=text]:focus, .input-field input[type=password]:focus
+	{
+	border-bottom: 1px solid #0096d6;
+	box-shadow: 0 1px 0 0 #0096d6;
+}
+
+/* input underline valid color */
+.input-field input[type=text].valid, .input-field input[type=password].valid
+	{
+	border-bottom: 1px solid #0096d6;
+	box-shadow: 0 1px 0 0 #0096d6;
+}
+
+/* invalid color */
+/* .input-field input[type=text].invalid {
+	border-bottom: 1px solid #000;
+	box-shadow: 0 1px 0 0 #000;
+} */
+
+/* remove X & Show password icon on IE */
+input::-ms-clear, input::-ms-reveal {
+	display: none;
+}
+
+/* remove yellow background auto fill */
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
+/* ------------------------------------ BUTTON ------------------------------------*/
+.button-hrtool {
+	background: #0096d6;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	color: white;
+	text-shadow: none;
+	transition: all .4s ease-in-out;
+	text-shadow: none;
+}
+
+.button-hrtool.ui-state-hover, .button-hrtool.ui-state-focus {
+	background: #6f6f6f;
+	box-shadow: none;
+	outline: 0;
+}
+
+/* ------------------------------------ MESSAGE ------------------------------------*/
+/* messages error for many fields */
+.messages-error-hrtool {
+	color: #cf2a27;
+	font-size: 12px;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 auto;
+}
+
+/* ------------------------------------ FOOTER ------------------------------------*/
+/* sticky footer */
+.page-footer {
+	background-color: #fff;
+	border-top: 1px solid #aaa;
+	bottom: 0;
+	color: #666;
+	font-size: 12px;
+	height: 51px;
+	padding: 10px 0;
+	position: absolute;
+	width: 100%;
+}
+
+/* reduce margin of materialize */
+.page-footer .row {
+	margin: 0px 10px;
+}
+
+.page-footer .row .col {
+	height: 30px;
+	padding: 0px;
+}
+
+.footer-version {
+	width: 100%;
+	text-align: right;
+}
+
+/* footer in small screen */
+@media screen and (max-width: 600px) {
+	body {
+		margin: 0 0 71px;
+	}
+	
+	.page-footer {
+		height: 71px;
+	}
+}
